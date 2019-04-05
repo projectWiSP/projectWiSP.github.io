@@ -12,6 +12,7 @@ function numberToSrc(number){
 	document.getElementById("slideshow").src = SLIDES_MAP[number]
 }
 var currentSlide = 0
+var maxslides = 6
 
 function lastslide() {
 	if(currentSlide!=0) {
@@ -19,14 +20,14 @@ function lastslide() {
 		numberToSrc(currentSlide)
 		console.log(currentSlide)
 	} else {
-		currentSlide = 5
+		currentSlide = maxslides
 		numberToSrc(currentSlide)
 		console.log(currentSlide)
 	}
 }
 
 function nextslide() {
-	if(currentSlide!=5) {
+	if(currentSlide!=maxslides) {
 		currentSlide += 1
 		numberToSrc(currentSlide)
 		console.log(currentSlide)
