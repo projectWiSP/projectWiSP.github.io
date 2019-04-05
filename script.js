@@ -5,6 +5,7 @@ const SLIDES_MAP = {
 	3: "3.png",
 	4: "4.png",
 	5: "5.png",
+	6: "6.jpg",
 }
 function numberToSrc(number){
 	console.log(SLIDES_MAP[number])
