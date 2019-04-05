@@ -37,6 +37,7 @@ body {
 }
 h1 {
 	color:white;
+	font-size:1rem;
 }
 h2 {
 	color:white;
@@ -75,11 +76,11 @@ b {
 	font-family:roboto-bold;
 }
 .slideshow {
-	width:40%;
+	width:80%;
 }
 .advancer {
 	margin:.5%;
-	width:19.5%;
+	width:39.5%;
 	background-color:black;
 	border:1px solid white;
 	color:white;
@@ -90,11 +91,21 @@ b {
 .advancer:active {
 	background-color: dimgrey;
 }
+
 @media only screen and (min-width: 900px) {
 	.padded_sys {
 		float:left;
 		display:inline-block;
 		width:19%;
+	}
+	h1 {
+		font-size:2rem;
+	}
+	.slideshow {
+		width:40%;
+	}
+	.advancer {
+		width:19.5%;
 	}
 	.padded_container {
 		margin-left:15%;
