@@ -1,6 +1,6 @@
 const SLIDES_MAP = {
 	0: "WiSP_conceptLogo.jpg",
-	1: "1.png",
+	1: "1.PNG",
 	2: "2.jpg",
 	3: "3.png",
 	4: "4.png",
