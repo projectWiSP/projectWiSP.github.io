@@ -45,7 +45,6 @@ h2 {
 .footer {
 	height:10%;
 	width:100%;
-	background-color: lightgrey;
 	bottom:0;
 	padding: 1%;
 	text-align: center;
@@ -76,7 +75,7 @@ b {
 	font-family:roboto-bold;
 }
 .slideshow {
-	width:80%;
+	height:50%;
 }
 .advancer {
 	margin:.5%;
@@ -94,6 +93,12 @@ b {
 .grey {
 	color:lightgrey;
 }
+.fullwidthM {
+	height:60%;
+}
+.imageContainer {
+	height:90%;
+}
 @media only screen and (min-width: 900px) {
 	.padded_sys {
 		float:left;
@@ -103,8 +108,11 @@ b {
 	h1 {
 		font-size:2rem;
 	}
+	.fullwidthM {
+		height:50%;
+	}
 	.slideshow {
-		width:40%;
+		height:60%;
 	}
 	.advancer {
 		width:19.5%;
@@ -123,4 +131,9 @@ b {
 	.desktop {
 		display:block;
 	}
+	.imageContainer {
+		height:70%;
+		bottom:0;
+	}
 }
+

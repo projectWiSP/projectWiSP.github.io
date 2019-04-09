@@ -6,13 +6,20 @@ const SLIDES_MAP = {
 	4: "4.png",
 	5: "5.png",
 	6: "6.jpg",
+	7: "7.jpg",
+	8: "8.jpg",
+	9: "9.jpg",
+	10: "10.jpg",
+	11: "11.jpg",
+	12: "12.jpg",
+	13: "13.jpg",
 }
 function numberToSrc(number){
 	console.log(SLIDES_MAP[number])
 	document.getElementById("slideshow").src = SLIDES_MAP[number]
 }
 var currentSlide = 0
-var maxslides = 6
+var maxslides = 13
 
 function lastslide() {
 	if(currentSlide!=0) {
