@@ -3,13 +3,19 @@
 <head>
 	<title>WiSP</title>
 	<link href="style.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <script type="text/javascript" src="jquery.js"></script>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <script src="script.js"></script>
-      <link href="font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="script.js"></script>
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/1.2.json", {onProgress: UnityProgress});
+    </script>
 </head>
-<body>
+<body id="body">
 <div class="header-container">
 	<img src="WISP_web.jpg" width="100%">
 	<div class="title"></div>
@@ -28,6 +34,22 @@
   <img id="slideshow" class="slideshow" src="WiSP_conceptLogo.jpg">
 </div>
 
+<button onclick="modal_3dm()" class="advancer hideOnMobile">View our concept 3d models</button>
+
+<div id="modal_3dm" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="modal_close()">&times;</span>
+    <h1>View our concept 3d models</h1>
+    <p>Use your mouse to drag, and scroll to zoom.</p>
+
+    <div id="unityPluginWeb">
+      <div id="gameContainerC" style="width: 960px; height: 600px"></div>
+    </div>
+
+  </div>
+</div>
+
+
 <div style="display:none">
   <img src="1.PNG">
   <img src="2.jpg">
@@ -45,9 +67,7 @@
 </div>
 
 </div>
-<center>
-  <a href="http://www.dmca.com/Protection/Status.aspx?ID=9725f1ca-8a3b-4346-afa1-6cd8439d3d82" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w100-5x1-02.png?ID=9725f1ca-8a3b-4346-afa1-6cd8439d3d82"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-</center>
+
 
 </body>
 </html>
