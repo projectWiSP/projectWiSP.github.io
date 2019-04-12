@@ -48,14 +48,12 @@ function nextslide() {
 function modal_3dm() {
 	document.getElementById("modal_3dm").style.display = "block"
 	document.getElementById("body").style.overflow = "hidden"
-	document.getElementById("gameContainerC").id = "gameContainer"
 	createPlugin()
 }
 
 function modal_close() {
 	document.getElementById("modal_3dm").style.display = "none"
 	document.getElementById("body").style.overflow = "auto"
-	document.getElementById("gameContainer").id = "gameContainerC"
 }
 
 function createPlugin() {
