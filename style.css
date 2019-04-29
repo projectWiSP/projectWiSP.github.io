@@ -186,3 +186,21 @@ iframe {
 	outline:none;
 	overflow:hidden;
 }
+
+.loaderDiv {
+	margin-top:255px
+}
+
+.loader {
+	border:#808080 2px solid;
+	width:15%;
+	height:10%;
+	background-color:transparent;
+	color:white;
+	
+}
+
+.explanation {
+	color:white;
+	content:"You need to click load to start the viewer. This is done so the website loads quickly and runs smoothly on lower-end computers, without the viewer bogging down the experience.";
+}
