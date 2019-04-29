@@ -62,7 +62,7 @@ function createPlugin() {
 }
 
 function loadBook() {
-	var parent = getElementById("bookFrame")
+	var parent = document.getElementById("bookFrame")
 	parent.innerHTML = ""
 	var frame = document.createElement("iframe")
 	frame.src="book/book.html"
@@ -72,7 +72,7 @@ function loadBook() {
 }
 
 function loadCheck() {
-	var parent = getElementById("checkFrame")
+	var parent = document.getElementById("checkFrame")
 	parent.innerHTML = ""
 	var frame = document.createElement("iframe")
 	frame.src="check/check.html"
