@@ -9,11 +9,6 @@
     <script src="script.js"></script>
     <link href="font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/1.4.json", {onProgress: UnityProgress});
-    </script>
 </head>
 <body id="body">
 <div class="header-container">
@@ -42,9 +37,8 @@
     <h1>View our concept 3d models</h1>
     <p>Use your mouse to drag, and scroll to zoom.</p>
     <center>
-    <div id="unityPluginWeb">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-    </div>
+    <iframe src="book/index.html" style="width: 960px; height: 600px"></iframe><br><br>
+    <iframe src="check/index.html" style="width: 960px; height: 600px"></iframe>
   </center>
   </div>
 </div>

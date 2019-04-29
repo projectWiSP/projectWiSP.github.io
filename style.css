@@ -181,3 +181,8 @@ b {
 	}
 }
 
+iframe {
+	border:none;
+	outline:none;
+	overflow:hidden;
+}
