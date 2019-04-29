@@ -64,17 +64,19 @@ function createPlugin() {
 function loadBook() {
 	var parent = getElementById("bookFrame")
 	parent.innerHTML = ""
-	var frame document.createElement("iframe")
+	var frame = document.createElement("iframe")
 	frame.src="book/book.html"
 	frame.width="960"
 	frame.height="600"
+	parent.appendChild(frame)
 }
 
 function loadCheck() {
 	var parent = getElementById("checkFrame")
 	parent.innerHTML = ""
-	var frame document.createElement("iframe")
+	var frame = document.createElement("iframe")
 	frame.src="check/check.html"
 	frame.width="960"
 	frame.height="600"
+	parent.appendChild(frame)
 }
