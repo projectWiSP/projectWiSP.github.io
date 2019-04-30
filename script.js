@@ -80,3 +80,23 @@ function loadCheck() {
 	frame.height="600"
 	parent.appendChild(frame)
 }
+
+function loadKey() {
+	var parent = document.getElementById("keyFrame")
+	parent.innerHTML = ""
+	var frame = document.createElement("iframe")
+	frame.src="key/key.html"
+	frame.width="960"
+	frame.height="600"
+	parent.appendChild(frame)
+}
+
+function loadBear() {
+	var parent = document.getElementById("bearFrame")
+	parent.innerHTML = ""
+	var frame = document.createElement("iframe")
+	frame.src="bear/bear.html"
+	frame.width="960"
+	frame.height="600"
+	parent.appendChild(frame)
+}
